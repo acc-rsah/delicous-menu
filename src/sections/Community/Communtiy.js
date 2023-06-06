@@ -1,11 +1,46 @@
 import React from "react";
-import ImageContainer from "../../components/ImageContainer/ImageContainer";
 import style from "./Community.module.css";
-import TextContainer from "../../components/TextContainer/TextContainer";
 import AppStrikedTitle from "../../components/AppStrikedTitle/AppStrikedTitle";
 import KnowMore from "../../components/KnowMore/KnowMore";
+import CommunityImgTxt from "../../components/CommunityImgTxt/CommunityImgTxt";
 
 const Communtiy = () => {
+    const menuJSON = [
+        {
+            picName: "Desert",
+            picPath: "desert.png",
+            cardDetail: {
+                title: "buzzfeedfood",
+                cardBodyText:
+                    "It’s taco Tuesday! These tacos from @jesseszewczyk have no added sugars and are SO good 🌮. Find the recipe from the link in our bio! 📸: @taylormillerphoto",
+                likeCount: "14.7k",
+                commentCount: "60",
+            },
+        },
+        {
+            picName: "Taco",
+            picPath: "taco.png",
+            cardDetail: {
+                title: "love_food",
+                cardBodyText:
+                    "Waffle sticks in Copenhagen! 🇩🇰😍 Milk chocolate with sprinkles, dark chocolate with coconut and milk chocolate with peanuts! [📷: @foodwithmichel] #lovefood",
+                likeCount: "99.7k",
+                commentCount: "789",
+            },
+        },
+        {
+            picName: "Burger",
+            picPath: "burger.png",
+            cardDetail: {
+                title: "buzzfeedfood",
+                cardBodyText:
+                    "Getting into long weekend mode like 🍤 #pancitpalabok (📷 @jeepneynyc)",
+                likeCount: "18.2k",
+                commentCount: "152",
+            },
+        },
+    ];
+
     return (
         <section className={style.container} id="community">
             <div
@@ -24,23 +59,25 @@ const Communtiy = () => {
                         </p>
                     </div>
                 </div>
-                <ImageContainer imagePath="desert.png" altText="Desert" />
-                <TextContainer
-                    title="buzzfeedfood"
-                    bodyText="It’s taco Tuesday! These tacos from @jesseszewczyk have no added sugars and are SO good 🌮. Find the recipe from the link in our bio! 📸: @taylormillerphoto"
-                    commentCount="60"
-                    heartCount="14.7k"
+                <CommunityImgTxt
+                    imagePath={menuJSON[0].picPath}
+                    altText={menuJSON[0].picName}
+                    title={menuJSON[0].cardDetail.title}
+                    bodyText={menuJSON[0].cardDetail.cardBodyText}
+                    commentCount={menuJSON[0].cardDetail.commentCount}
+                    heartCount={menuJSON[0].cardDetail.likeCount}
                 />
             </div>
             <div
                 className={`${style.imgNdTxtContainer} ${style.imgNdTxtContainer_row2}`}
             >
-                <ImageContainer imagePath="taco.png" altText="taco" />
-                <TextContainer
-                    title="love_food"
-                    bodyText="Waffle sticks in Copenhagen! 🇩🇰😍 Milk chocolate with sprinkles, dark chocolate with coconut and milk chocolate with peanuts! [📷: @foodwithmichel] #lovefood"
-                    commentCount="789"
-                    heartCount="99.7k"
+                <CommunityImgTxt
+                    imagePath={menuJSON[1].picPath}
+                    altText={menuJSON[1].picName}
+                    title={menuJSON[1].cardDetail.title}
+                    bodyText={menuJSON[1].cardDetail.cardBodyText}
+                    commentCount={menuJSON[1].cardDetail.commentCount}
+                    heartCount={menuJSON[1].cardDetail.likeCount}
                 />
             </div>
             <div
@@ -53,12 +90,13 @@ const Communtiy = () => {
                         magna aliqua. Duis aute irure.
                     </p>
                 </div>
-                <ImageContainer imagePath="burger.png" altText="burger" />
-                <TextContainer
-                    title="buzzfeedfood"
-                    bodyText="Getting into long weekend mode like 🍤 #pancitpalabok (📷 @jeepneynyc)"
-                    commentCount="152"
-                    heartCount="18.2k"
+                <CommunityImgTxt
+                    imagePath={menuJSON[2].picPath}
+                    altText={menuJSON[2].picName}
+                    title={menuJSON[2].cardDetail.title}
+                    bodyText={menuJSON[2].cardDetail.cardBodyText}
+                    commentCount={menuJSON[2].cardDetail.commentCount}
+                    heartCount={menuJSON[2].cardDetail.likeCount}
                 />
             </div>
         </section>
