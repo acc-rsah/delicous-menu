@@ -1,0 +1,12 @@
+.container {
+    background-color: #ffdac9;
+    font-size: 18px;
+    text-align: center;
+    font-weight: var(--font_weight_bold);
+    letter-spacing: 0.18px;
+    color: var(--charcoal_black);
+    display: inline-flex;
+    padding: 0 8px;
+    text-transform: uppercase;
+    margin-top: 8px;
+}

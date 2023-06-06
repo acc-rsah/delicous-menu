@@ -1,0 +1,21 @@
+.titleText {
+    font-size: 40px;
+    color: var(--charcoal_black);
+    font-weight: var(--font_weight_bold);
+    text-transform: uppercase;
+    line-height: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.titleText::before {
+    content: "";
+    height: 6px;
+    width: 105%;
+    background-color: #ffdac9;
+    position: absolute;
+    left: -7px;
+    transform: translateY(68%);
+    bottom: 50%;
+    z-index: -1;
+}

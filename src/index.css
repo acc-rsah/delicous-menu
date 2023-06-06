@@ -22,3 +22,32 @@ body {
     --font_weight_regular: 400;
     --charcoal_black: #333333;
 }
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    ::-webkit-scrollbar {
+        height: 5px;
+        width: 0;
+    }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    margin: 4px 0 4px 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

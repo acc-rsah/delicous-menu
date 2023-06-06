@@ -1,0 +1,53 @@
+.container {
+    height: 250px;
+    width: 250px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0px 15px 50px #0000000f;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: self-end;
+}
+
+.title {
+    color: var(--charcoal_black);
+    font-weight: var(--font_weight_bold);
+    font-size: 22px;
+    letter-spacing: 0.44px;
+    margin-bottom: 16px;
+}
+
+.bodyText {
+    color: var(--charcoal_black);
+    font-size: 15px;
+    letter-spacing: 0.15px;
+}
+
+.boxContainer {
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+.boxContainer .count {
+    color: var(--charcoal_black);
+    letter-spacing: 0.14px;
+    font-size: 14px;
+    font-weight: var(--font_weight_bold);
+    margin-left: 4px;
+    line-height: 1.2;
+}
+
+.likeCommentBox + .likeCommentBox {
+    margin-left: 12px;
+}
+.likendComment {
+    display: flex;
+    column-gap: 16px;
+    align-self: flex-end;
+}
+
+.boxContainer .icons {
+    align-self: center;
+}
