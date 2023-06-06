@@ -49,11 +49,6 @@
     align-items: center;
 }
 
-/* .section_hid {
-    opacity: 0;
-    transition: opacity 0.8s;
-} */
-
 .section_vis {
     opacity: 1;
     transition-delay: 0.2s;

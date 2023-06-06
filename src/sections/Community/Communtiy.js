@@ -45,21 +45,6 @@ const Communtiy = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
 
     useEffect(() => {
-        /* const handleScroll = () => {
-            const windowHeight = window.innerHeight;
-            const scrollPosition = window.scrollY + windowHeight;
-
-            const sectionElements = document.querySelectorAll(".section");
-            sectionElements.forEach((section, index) => {
-                const sectionTop = section.offsetTop;
-                if (scrollPosition > sectionTop + 100) {
-                    const updatedVisibleState = [...isVisible];
-                    updatedVisibleState[index] = true;
-                    setIsVisible(updatedVisibleState);
-                }
-            });
-        }; */
-
         const handleScroll = () => {
             const currentScrollPos = window.pageYOffset;
 
@@ -88,30 +73,14 @@ const Communtiy = () => {
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, [isVisible]);
-
-    /* const sectionStyle = {
-        opacity: 0,
-        transition: "opacity 0.8s",
-    };
-
-    const visibleSectionStyle = {
-        ...sectionStyle,
-        opacity: 1,
-        transitionDelay: "0.2s",
-    }; */
+    }, [isVisible, prevScrollPos]);
 
     return (
         <section className={style.container} id="community">
-            {/* <div
-                className={`${style.imgNdTxtContainer} section`}
-                style={isVisible[0] ? visibleSectionStyle : sectionStyle}
-            > */}
             <div
                 className={`${style.imgNdTxtContainer} section ${
                     isVisible[0] ? `${style.section_vis}` : ""
                 }`}
-                /* style={isVisible[0] ? visibleSectionStyle : sectionStyle} */
             >
                 <div className={style.title_container}>
                     <div>
@@ -135,15 +104,10 @@ const Communtiy = () => {
                     heartCount={menuJSON[0].cardDetail.likeCount}
                 />
             </div>
-            {/* <div
-                className={`${style.imgNdTxtContainer} section`}
-                style={isVisible[1] ? visibleSectionStyle : sectionStyle}
-            > */}
             <div
                 className={`${style.imgNdTxtContainer} section ${
                     isVisible[1] ? `${style.section_vis}` : ""
                 }`}
-                /* style={isVisible[0] ? visibleSectionStyle : sectionStyle} */
             >
                 <CommunityImgTxt
                     imagePath={menuJSON[1].picPath}
@@ -154,15 +118,10 @@ const Communtiy = () => {
                     heartCount={menuJSON[1].cardDetail.likeCount}
                 />
             </div>
-            {/* <div
-                className={`${style.imgNdTxtContainer} section`}
-                style={isVisible[2] ? visibleSectionStyle : sectionStyle}
-            > */}
             <div
                 className={`${style.imgNdTxtContainer} section ${
                     isVisible[2] ? `${style.section_vis}` : ""
                 }`}
-                /* style={isVisible[0] ? visibleSectionStyle : sectionStyle} */
             >
                 <div className={style.sideText}>
                     <p>
