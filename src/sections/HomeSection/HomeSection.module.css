@@ -1,6 +1,6 @@
 .container {
     background: #ffdac9 0% 0% no-repeat padding-box;
-    height: calc(100vh - 64px);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,12 +17,12 @@
 
 .appLogo {
     position: absolute;
-    top: 80px;
+    top: 124px;
     left: 20%;
     transform: translateX(10%);
 }
 .dishLogo {
-    height: 88%;
+    height: 80%;
     object-fit: cover;
 }
 
@@ -53,4 +53,73 @@
 .sectionSubText3 {
     font-size: 35px;
     line-height: 2;
+}
+
+@media screen and (min-width: 1200px) {
+    .appLogo {
+        left: 18%;
+    }
+    .dishLogo {
+        height: 64%;
+    }
+    .sectionSubText1 {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    .sectionSubText2 {
+        font-size: 69px;
+        line-height: 0.8;
+    }
+
+    .sectionSubText3 {
+        font-size: 24px;
+        line-height: 2;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .appLogo {
+        left: 20%;
+    }
+    .dishLogo {
+        height: 64%;
+    }
+    .sectionSubText1 {
+        font-size: 56px;
+        line-height: 1;
+    }
+
+    .sectionSubText2 {
+        font-size: 80px;
+        line-height: 0.8;
+    }
+
+    .sectionSubText3 {
+        font-size: 32px;
+        line-height: 2;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .appLogo {
+        left: 22%;
+    }
+    .dishLogo {
+        height: 78%;
+    }
+    .sectionSubText1 {
+        font-size: 56px;
+        line-height: 1;
+    }
+
+    .sectionSubText2 {
+        font-size: 80px;
+        line-height: 0.8;
+    }
+
+    .sectionSubText3 {
+        font-size: 32px;
+        line-height: 2;
+    }
 }

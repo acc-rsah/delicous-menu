@@ -3,6 +3,10 @@
     padding: 16px 24px 8px;
     display: flex;
     background-color: #ffdac9;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: transparent;
 }
 
 .logo {
