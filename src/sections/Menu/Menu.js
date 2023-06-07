@@ -15,54 +15,42 @@ const Menu = ({ data }) => {
         menuByFoodType[type].push(rest);
     }
 
+    const renderMenu = (menuType) => {
+        return (
+            <div className={styles.foodCardContainer}>
+                <MenuTitleNdFoodCard
+                    menuType={menuType}
+                    menuByFoodType={menuByFoodType}
+                />
+            </div>
+        );
+    };
+
     return (
         <section id="Menu_Section" className={styles.menuContainer}>
-            <AppStrikedTitle text="Our Menu" />
-            <KnowMore />
-            {Object.keys(menuByFoodType).map((ele, index) => {
-                //et menuType = ele.toLowerCase().split("_").join(" ");
-                let menuType = ele.toLowerCase();
-                switch (menuType) {
-                    case "starters":
-                        return (
-                            <div key={index}>
-                                <MenuTitleNdFoodCard
-                                    menuType={menuType}
-                                    menuByFoodType={menuByFoodType}
-                                />
-                            </div>
-                        );
-                    case "main_courses":
-                        return (
-                            <div key={index}>
-                                <MenuTitleNdFoodCard
-                                    menuType={menuType}
-                                    menuByFoodType={menuByFoodType}
-                                />
-                            </div>
-                        );
-                    case "sides":
-                        return (
-                            <div key={index}>
-                                <MenuTitleNdFoodCard
-                                    menuType={menuType}
-                                    menuByFoodType={menuByFoodType}
-                                />
-                            </div>
-                        );
-                    case "desserts":
-                        return (
-                            <div key={index}>
-                                <MenuTitleNdFoodCard
-                                    menuType={menuType}
-                                    menuByFoodType={menuByFoodType}
-                                />
-                            </div>
-                        );
-                    default:
-                        return <div key={index}>No Records Found</div>;
-                }
-            })}
+            <div className={styles.menuTitle}>
+                <AppStrikedTitle text="Our Menu" />
+                <KnowMore />
+            </div>
+            <div className={styles.foodTypeContainer}>
+                {Object.keys(menuByFoodType).map((ele, index) => {
+                    //et menuType = ele.toLowerCase().split("_").join(" ");
+                    let menuType = ele.toLowerCase();
+                    switch (menuType) {
+                        case "starters":
+                        case "main_courses":
+                        case "sides":
+                        case "desserts":
+                            return (
+                                <React.Fragment key={index}>
+                                    {renderMenu(menuType)}
+                                </React.Fragment>
+                            );
+                        default:
+                            return <div key={index}>No Records Found</div>;
+                    }
+                })}
+            </div>
         </section>
     );
 };
