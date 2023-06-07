@@ -1,0 +1,11 @@
+.container {
+    width: 200px;
+}
+
+.titleText {
+    font-size: 40px;
+    color: var(--charcoal_black);
+    font-weight: var(--font_weight_bold);
+    line-height: 0.9;
+    text-transform: uppercase;
+}

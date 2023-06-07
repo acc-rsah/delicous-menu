@@ -4,6 +4,7 @@ import HomeSection from "./components/HomeSection/HomeSection";
 import Communtiy from "./sections/Community/Communtiy";
 import SkeletonLoader from "./components/SkeletonLoader/SkeletonLoader";
 import useFetch from "./hooks/useFetchApi";
+import Menu from "./sections/Menu/Menu";
 
 function App() {
     const { loading, data, error } = useFetch(
@@ -16,12 +17,13 @@ function App() {
     if (error) {
         return <p>Error: {error.message}</p>;
     }
-    console.log(data);
+
     return (
         <div className="App">
             <NavHeader />
             <HomeSection />
             <Communtiy />
+            <Menu data={data} />
         </div>
     );
 }

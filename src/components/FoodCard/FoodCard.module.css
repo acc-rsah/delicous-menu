@@ -1,0 +1,32 @@
+.container {
+    width: 200px;
+    display: grid;
+    grid-row-gap: 8px;
+}
+
+.foodTitle {
+    font-size: 14px;
+    font-weight: var(--font_weight_bold);
+    color: var(--charcoal_black);
+    letter-spacing: 0.14px;
+    text-transform: uppercase;
+}
+
+.foodDesc {
+    font-size: 15px;
+    letter-spacing: 0.15px;
+    color: #767676;
+}
+
+.priceBox {
+    border: 2px solid #ffdac9;
+    padding: 4px 12px;
+    width: fit-content;
+}
+
+.price {
+    font-weight: var(--font_weight_bold);
+    color: var(--charcoal_black);
+    font-size: 14px;
+    letter-spacing: 0.14px;
+}
