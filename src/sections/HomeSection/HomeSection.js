@@ -6,9 +6,18 @@ import appLogo from "../../assets/icons/stamp.png";
 const HomeSection = () => {
     return (
         <section className={style.container} id="homesection">
-            <img className={style.appLogo} src={appLogo} alt="AppLogo" />
-
-            <img className={style.dishLogo} src={dishLogo} alt="FoodLogo" />
+            <img
+                className={style.appLogo}
+                src={appLogo}
+                alt="AppLogo"
+                loading="lazy"
+            />
+            <img
+                className={style.dishLogo}
+                src={dishLogo}
+                alt="FoodLogo"
+                loading="lazy"
+            />
             <div className={style.sectionTitle}>
                 <span
                     className={`${style.sectionSubText} ${style.sectionSubText1}`}
