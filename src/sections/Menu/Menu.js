@@ -36,7 +36,16 @@ const Menu = ({ data }) => {
                 {Object.keys(menuByFoodType).map((ele, index) => {
                     //et menuType = ele.toLowerCase().split("_").join(" ");
                     let menuType = ele.toLowerCase();
-                    switch (menuType) {
+
+                    return menuType ? (
+                        <React.Fragment key={index}>
+                            {renderMenu(menuType)}
+                        </React.Fragment>
+                    ) : (
+                        <div key={index}>No Records Found</div>
+                    );
+
+                    /* switch (menuType) {
                         case "starters":
                         case "main_courses":
                         case "sides":
@@ -48,7 +57,7 @@ const Menu = ({ data }) => {
                             );
                         default:
                             return <div key={index}>No Records Found</div>;
-                    }
+                    } */
                 })}
             </div>
         </section>
