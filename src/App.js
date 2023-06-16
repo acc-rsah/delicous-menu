@@ -5,7 +5,7 @@ import Communtiy from "./sections/Community/Communtiy";
 import SkeletonLoader from "./components/SkeletonLoader/SkeletonLoader";
 import useFetch from "./hooks/useFetchApi";
 import Menu from "./sections/Menu/Menu";
-/* import Map from "./sections/Maps/Map"; */
+import Map from "./sections/Maps/Map";
 
 function App() {
     const { loading, data, error } = useFetch(
@@ -24,7 +24,7 @@ function App() {
             <NavHeader />
             <HomeSection />
             <Communtiy />
-            {/* <Map /> */}
+            <Map />
             <Menu data={data} />
         </div>
     );

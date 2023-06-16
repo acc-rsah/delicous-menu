@@ -1,0 +1,33 @@
+.container {
+    position: relative;
+}
+
+.location_Box {
+    background-color: #fff;
+    width: 220px;
+    height: 106px;
+    padding: 0 18px;
+    position: absolute;
+    top: 70px;
+    left: 22%;
+    transform: translateX(-50%);
+}
+
+.location_innerBox {
+    position: absolute;
+    top: -30px;
+}
+
+.location_title {
+    font-size: 62px;
+    letter-spacing: 0px;
+    color: var(--charcoal_black);
+}
+
+.location_address {
+    font-size: 15px;
+    letter-spacing: 0.15px;
+    color: var(--charcoal_black);
+    font-family: var(--font_family_2);
+    margin-top: 2px;
+}
