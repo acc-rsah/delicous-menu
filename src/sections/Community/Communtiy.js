@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import style from "./Community.module.css";
 import AppStrikedTitle from "../../components/AppStrikedTitle/AppStrikedTitle";
-import KnowMore from "../../components/KnowMore/KnowMore";
+import TextBlock from "../../components/TextBlock/TextBlock";
 import CommunityImgTxt from "../../components/CommunityImgTxt/CommunityImgTxt";
 
 const menuJSON = [
@@ -86,7 +86,7 @@ const Communtiy = () => {
                     <div>
                         <h2 className={style.titleText}>Meet Our</h2>
                         <AppStrikedTitle text="Community" />
-                        <KnowMore />
+                        <TextBlock text="Know More" variant="variant_1" />
                     </div>
                     <div>
                         <p className={style.titleSideText}>

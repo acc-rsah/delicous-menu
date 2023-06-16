@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Menu.module.css";
 import AppStrikedTitle from "../../components/AppStrikedTitle/AppStrikedTitle";
-import KnowMore from "../../components/KnowMore/KnowMore";
+import TextBlock from "../../components/TextBlock/TextBlock";
 import MenuTitleNdFoodCard from "../../components/MenuTitleNdFoodCard/MenuTitleNdFoodCard";
 
 const Menu = ({ data }) => {
@@ -30,7 +30,7 @@ const Menu = ({ data }) => {
         <section id="Menu_Section" className={styles.menuContainer}>
             <div className={styles.menuTitle}>
                 <AppStrikedTitle text="Our Menu" />
-                <KnowMore />
+                <TextBlock text="Know More" variant="variant_1" />
             </div>
             <div className={styles.foodTypeContainer}>
                 {Object.keys(menuByFoodType).map((ele, index) => {

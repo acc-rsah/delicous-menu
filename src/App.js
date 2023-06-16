@@ -24,7 +24,7 @@ function App() {
             <NavHeader />
             <HomeSection />
             <Communtiy />
-            <Map />
+            {/* <Map /> */}
             <Menu data={data} />
         </div>
     );
