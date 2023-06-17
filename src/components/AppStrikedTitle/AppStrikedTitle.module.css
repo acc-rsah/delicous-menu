@@ -26,3 +26,7 @@
 .variant_1::before {
     background-color: #ffdac9;
 }
+
+.variant_2::before {
+    background-color: #fff;
+}

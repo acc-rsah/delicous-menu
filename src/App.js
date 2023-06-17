@@ -7,6 +7,7 @@ import useFetch from "./hooks/useFetchApi";
 import Menu from "./sections/Menu/Menu";
 import Map from "./sections/Maps/Map";
 import PopularRecipes from "./sections/PopularRecipes/PopularRecipes";
+import Collaborate from "./sections/Collaborate/Collaborate";
 
 function App() {
     const { loading, data, error } = useFetch(
@@ -28,6 +29,7 @@ function App() {
             {/* <Map /> */}
             <Menu data={data} />
             <PopularRecipes />
+            <Collaborate />
         </div>
     );
 }

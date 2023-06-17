@@ -1,0 +1,22 @@
+.label {
+    font-size: 14px;
+    color: var(--charcoal_black);
+    letter-spacing: 0.14px;
+    text-transform: uppercase;
+}
+
+input[type="text"],
+select {
+    display: block;
+    width: 250px;
+    padding: 8px 0;
+    margin: 4px 0 0;
+    border: none;
+    border-bottom: 1px solid var(--charcoal_black);
+    background-color: #ffdac9;
+    outline: none;
+    color: #767676;
+    letter-spacing: 0.15px;
+    font-family: var(--font_family_2);
+    font-size: 15px;
+}
