@@ -8,7 +8,12 @@ const InputForm = ({ inputObj }) => {
         switch (inputType) {
             case "text":
                 return (
-                    <input type="text" name={label} placeholder={placeholder} />
+                    <input
+                        autoComplete="off"
+                        type="text"
+                        name={label}
+                        placeholder={placeholder}
+                    />
                 );
             default:
                 return (
