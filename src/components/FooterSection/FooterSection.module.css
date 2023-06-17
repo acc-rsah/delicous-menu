@@ -1,0 +1,26 @@
+.container {
+    width: 115px;
+}
+.title {
+    letter-spacing: 0.14px;
+    color: #ffdac9;
+    font-size: 14px;
+    height: 25px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.subSection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.subSection li {
+    display: block;
+    width: fit-content;
+    font-family: var(--font_family_2);
+    letter-spacing: 0.13px;
+    color: #767676;
+    font-size: 13px;
+}

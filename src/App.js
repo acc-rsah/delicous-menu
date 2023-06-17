@@ -8,6 +8,7 @@ import Menu from "./sections/Menu/Menu";
 import Map from "./sections/Maps/Map";
 import PopularRecipes from "./sections/PopularRecipes/PopularRecipes";
 import Collaborate from "./sections/Collaborate/Collaborate";
+import Footer from "./sections/Footer/Footer";
 
 function App() {
     const { loading, data, error } = useFetch(
@@ -30,6 +31,7 @@ function App() {
             <Menu data={data} />
             <PopularRecipes />
             <Collaborate />
+            <Footer />
         </div>
     );
 }
