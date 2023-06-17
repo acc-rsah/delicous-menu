@@ -6,6 +6,7 @@ import SkeletonLoader from "./components/SkeletonLoader/SkeletonLoader";
 import useFetch from "./hooks/useFetchApi";
 import Menu from "./sections/Menu/Menu";
 import Map from "./sections/Maps/Map";
+import PopularRecipes from "./sections/PopularRecipes/PopularRecipes";
 
 function App() {
     const { loading, data, error } = useFetch(
@@ -26,6 +27,7 @@ function App() {
             <Communtiy />
             {/* <Map /> */}
             <Menu data={data} />
+            <PopularRecipes />
         </div>
     );
 }

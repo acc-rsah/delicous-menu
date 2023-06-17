@@ -29,7 +29,7 @@ const Menu = ({ data }) => {
     return (
         <section id="Menu_Section" className={styles.menuContainer}>
             <div className={styles.menuTitle}>
-                <AppStrikedTitle text="Our Menu" />
+                <AppStrikedTitle text="Our Menu" variant="variant_1" />
                 <TextBlock text="Know More" variant="variant_1" />
             </div>
             <div className={styles.foodTypeContainer}>

@@ -4,9 +4,11 @@
     font-weight: var(--font_weight_bold);
     letter-spacing: 0.18px;
     display: inline-flex;
-    padding: 0 8px;
     text-transform: uppercase;
-    margin-top: 8px;
+    margin-top: 4px;
+    height: 30px;
+    align-items: center;
+    padding: 0 8px;
 }
 
 .variant_1 {
@@ -17,4 +19,8 @@
 .variant_2 {
     background-color: var(--charcoal_black);
     color: #ffdac9;
+}
+
+.text {
+    line-height: 1;
 }

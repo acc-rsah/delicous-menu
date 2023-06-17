@@ -1,0 +1,26 @@
+.container {
+    margin-left: 80px;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    background-color: #fdfdfd;
+}
+
+.headerTitles {
+    display: flex;
+    width: 1075px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 35px;
+    color: var(--charcoal_black);
+}
+
+.dish_section {
+    margin-top: 65px;
+    padding-left: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 25px;
+}

@@ -5,7 +5,7 @@ const TextBlock = ({ text, variant }) => {
     //let varClass = style[variant]
     return (
         <div className={`${style.container} ${style[variant]}`}>
-            <p>{text}</p>
+            <p className={style.text}>{text}</p>
         </div>
     );
 };

@@ -1,0 +1,68 @@
+.container {
+    position: relative;
+    height: 240px;
+    width: 240px;
+    background-color: #fff;
+}
+
+.bigContainer.container {
+    height: 370px;
+    width: 370px;
+}
+
+.chefStamp {
+    position: absolute;
+    right: 16px;
+    top: -54px;
+}
+
+.servingBox {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #33333366;
+    backdrop-filter: blur(3px);
+    color: #fff;
+}
+
+.bigContainer .servingBox {
+    height: 110px;
+    width: 110px;
+}
+
+.servingCount {
+    letter-spacing: 0.5px;
+    font-size: 35px;
+    line-height: 1;
+}
+
+.bigContainer .servingCount {
+    font-size: 50px;
+}
+
+.servingTitle {
+    font-size: 14px;
+    letter-spacing: 0.44px;
+}
+
+.bigContainer .servingTitle {
+    font-size: 22px;
+}
+
+.goBtn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.menuPic {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

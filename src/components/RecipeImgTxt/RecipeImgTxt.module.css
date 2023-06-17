@@ -1,0 +1,31 @@
+.container {
+    width: 240px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.postionTop {
+    justify-content: flex-start;
+}
+.postionEnd {
+    justify-content: flex-end;
+}
+
+.bigContainer.container {
+    width: 370px;
+}
+
+.recipeImgContainer {
+    background-color: #fff;
+    box-shadow: 0px 20px 30px #0000000a;
+}
+
+.chefName {
+    margin-top: 16px;
+    text-align: end;
+    text-transform: uppercase;
+    color: var(--charcoal_black);
+    font-size: 14px;
+    letter-spacing: 0.14px;
+}

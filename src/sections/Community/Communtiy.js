@@ -85,7 +85,7 @@ const Communtiy = () => {
                 <div className={style.title_container}>
                     <div>
                         <h2 className={style.titleText}>Meet Our</h2>
-                        <AppStrikedTitle text="Community" />
+                        <AppStrikedTitle text="Community" variant="variant_1" />
                         <TextBlock text="Know More" variant="variant_1" />
                     </div>
                     <div>

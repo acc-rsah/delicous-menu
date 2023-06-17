@@ -2,7 +2,7 @@
     width: fit-content;
 }
 .titleText {
-    font-size: 40px;
+    font-size: 62px;
     color: var(--charcoal_black);
     font-weight: var(--font_weight_bold);
     text-transform: uppercase;
@@ -14,11 +14,15 @@
 .titleText::before {
     content: "";
     height: 6px;
-    width: 105%;
-    background-color: #ffdac9;
+    /* width: 105%; */
+    width: 120%;
     position: absolute;
-    left: -7px;
-    transform: translateY(68%);
+    left: 50%;
+    transform: translate(-50%, 40%);
     bottom: 50%;
     z-index: -1;
+}
+
+.variant_1::before {
+    background-color: #ffdac9;
 }

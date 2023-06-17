@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 24px;
+    row-gap: 12px;
+}
+
+.level {
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    color: #767676;
+    opacity: 0.56;
+    text-transform: uppercase;
+}
+
+.dishName {
+    letter-spacing: 0.44px;
+    color: var(--charcoal_black);
+    font-size: 22px;
+    text-transform: uppercase;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dishDesc {
+    letter-spacing: 0.15px;
+    color: #767676;
+    font-size: 15px;
+    font-family: var(--font_family_2);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis;
+}
+
+.bigContainer .dishDesc {
+    -webkit-line-clamp: 3;
+}
