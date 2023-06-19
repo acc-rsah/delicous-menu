@@ -1,8 +1,8 @@
 .container {
-    height: 64px;
-    padding: 16px 24px 8px;
+    /* height: 64px; */
+    padding: 12px 24px 8px;
     display: flex;
-    background-color: #ffdac9;
+    /* background-color: #ffdac9; */
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -11,13 +11,13 @@
 
 .logo {
     font-size: var(--logo_font_size);
-    font-weight: var(--font_weight_bold);
     color: var(--charcoal_black);
+    padding-right: 16px;
 }
 
 .container > ul {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     column-gap: 40px;
 }
 
@@ -28,9 +28,8 @@
 }
 
 .container .navCat {
-    font-weight: var(--font_weight_bold);
-    font-size: var(--font_weight_regular);
-    padding-bottom: 4px;
+    font-size: 18px;
+    letter-spacing: 0.18px;
 }
 
 .rightNavSection {
