@@ -5,6 +5,10 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    background-image: url("../../assets/images/landingPage.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto calc(100vh - 20px);
 }
 /* 
 .dishImgContainer {
@@ -17,9 +21,9 @@
 
 .appLogo {
     position: absolute;
-    top: 124px;
-    left: 20%;
-    transform: translateX(10%);
+    top: calc(50% - 160px);
+    left: calc(50% - 312px);
+    transform: translate(-50%, -50%);
 }
 .dishLogo {
     height: 80%;
@@ -28,7 +32,7 @@
 
 .sectionTitle {
     position: absolute;
-    transform: translateY(36px);
+    transform: translateY(30%);
     opacity: 1;
 }
 
@@ -55,7 +59,7 @@
     line-height: 2;
 }
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     .appLogo {
         left: 18%;
     }
@@ -76,9 +80,9 @@
         font-size: 24px;
         line-height: 2;
     }
-}
+} */
 
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
     .appLogo {
         left: 20%;
     }
@@ -99,9 +103,9 @@
         font-size: 32px;
         line-height: 2;
     }
-}
+} */
 
-@media screen and (min-width: 1366px) {
+/* @media screen and (min-width: 1366px) {
     .appLogo {
         left: 22%;
     }
@@ -122,4 +126,4 @@
         font-size: 32px;
         line-height: 2;
     }
-}
+} */

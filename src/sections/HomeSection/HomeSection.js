@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./HomeSection.module.css";
-import dishLogo from "../../assets/images/landing_page.png";
+// import dishLogo from "../../assets/images/landing_page.png";
 import appLogo from "../../assets/icons/stamp.png";
 
 const HomeSection = () => {
@@ -12,12 +12,12 @@ const HomeSection = () => {
                 alt="AppLogo"
                 loading="lazy"
             />
-            <img
+            {/* <img
                 className={style.dishLogo}
                 src={dishLogo}
                 alt="FoodLogo"
                 loading="lazy"
-            />
+            /> */}
             <div className={style.sectionTitle}>
                 <span
                     className={`${style.sectionSubText} ${style.sectionSubText1}`}
