@@ -113,7 +113,10 @@ const PopularRecipes = () => {
         },
     ];
     return (
-        <section id="popular_recipes" className={style.container}>
+        <section
+            className={`${style.container} menu_section`}
+            id="popular_recipes"
+        >
             <div className={style.headerTitles}>
                 <div>
                     <h2 className={style.title}>Popular</h2>
@@ -129,9 +132,9 @@ const PopularRecipes = () => {
             </div>
 
             <div className={style.dish_section} id="dish_section">
-                {/* {popRecipes.map((recipe, index) => (
+                {popRecipes.map((recipe, index) => (
                     <RecipeImgTxt recipe={recipe} key={index} />
-                ))} */}
+                ))}
             </div>
         </section>
     );

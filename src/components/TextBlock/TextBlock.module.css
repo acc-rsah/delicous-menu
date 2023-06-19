@@ -22,6 +22,11 @@
     color: #ffdac9;
 }
 
+.variant_3 {
+    background-color: #fff;
+    color: var(--charcoal_black);
+}
+
 .text {
     line-height: 1;
 }

@@ -8,7 +8,7 @@ Grab the maps to move around.
 
 const Map = () => {
     return (
-        <section className={style.container} id="Map_Iframe">
+        <section className={`${style.container} menu_section`} id="Map_Iframe">
             <div className={style.location_Box}>
                 <div className={style.location_innerBox}>
                     <h2 className={style.location_title}>LOCATION</h2>

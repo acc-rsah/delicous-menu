@@ -19,7 +19,7 @@ const Collaborate = () => {
         },
     ];
     return (
-        <section className={style.container} id="collaborate">
+        <section className={`${style.container} menu_section`} id="collaborate">
             <div className={style.pContainer}>
                 <div className={style.innerContainer}>
                     <div className={style.leftSection}>

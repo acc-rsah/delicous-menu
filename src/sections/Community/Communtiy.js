@@ -76,7 +76,7 @@ const Communtiy = () => {
     }, [isVisible, prevScrollPos]);
 
     return (
-        <section className={style.container} id="community">
+        <section className={`${style.container} menu_section`} id="community">
             <div
                 className={`${style.imgNdTxtContainer} section ${
                     isVisible[0] ? `${style.section_vis}` : ""

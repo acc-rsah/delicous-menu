@@ -5,7 +5,7 @@ import appLogo from "../../assets/icons/stamp.png";
 
 const HomeSection = () => {
     return (
-        <section className={style.container} id="homesection">
+        <section className={`${style.container} menu_section`} id="homesection">
             <img
                 className={style.appLogo}
                 src={appLogo}

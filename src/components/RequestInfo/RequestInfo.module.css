@@ -1,0 +1,7 @@
+.container {
+    position: fixed;
+    right: -16px;
+    z-index: 10000;
+    top: 45%;
+    transform: translateY(-50%) rotate(270deg);
+}

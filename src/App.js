@@ -9,6 +9,8 @@ import Map from "./sections/Maps/Map";
 import PopularRecipes from "./sections/PopularRecipes/PopularRecipes";
 import Collaborate from "./sections/Collaborate/Collaborate";
 import Footer from "./sections/Footer/Footer";
+import SectionCounter from "./components/SectionCounter/SectionCounter";
+import RequestInfo from "./components/RequestInfo/RequestInfo";
 
 function App() {
     const { loading, data, error } = useFetch(
@@ -25,9 +27,11 @@ function App() {
     return (
         <div className="App">
             <NavHeader />
+            <SectionCounter />
+            <RequestInfo />
             <HomeSection />
             <Communtiy />
-            {/* <Map /> */}
+            <Map />
             <Menu data={data} />
             <PopularRecipes />
             <Collaborate />
