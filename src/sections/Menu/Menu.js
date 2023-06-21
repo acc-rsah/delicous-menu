@@ -7,7 +7,7 @@ import MenuTitleNdFoodCard from "../../components/MenuTitleNdFoodCard/MenuTitleN
 const Menu = ({ data }) => {
     const menuByFoodType = {};
 
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 0; i < data?.length; i++) {
         const { type, ...rest } = data[i];
         if (!menuByFoodType[type]) {
             menuByFoodType[type] = [];

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import NavHeader from "./sections/NavHeader/NavHeader";
 import HomeSection from "./sections/HomeSection/HomeSection";
 import Communtiy from "./sections/Community/Communtiy";
@@ -11,12 +11,23 @@ import Collaborate from "./sections/Collaborate/Collaborate";
 import Footer from "./sections/Footer/Footer";
 import SectionCounter from "./components/SectionCounter/SectionCounter";
 import RequestInfo from "./components/RequestInfo/RequestInfo";
+import landingImg from "./assets/images/landingPage.png";
 
 function App() {
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    useEffect(() => {
+        const image = new Image();
+        image.src = landingImg;
+        image.onload = () => {
+            setImageLoaded(true);
+        };
+    }, []);
+
     const { loading, data, error } = useFetch(
         "https://3gyhzkmhda.eu-west-1.awsapprunner.com/foods"
     );
-    if (loading) {
+    if (loading || !imageLoaded) {
         return <SkeletonLoader />;
     }
 
