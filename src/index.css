@@ -43,6 +43,15 @@ body {
     }
 }
 
+/* html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.menu_section {
+    scroll-snap-align: start;
+} */
+
 /* Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
