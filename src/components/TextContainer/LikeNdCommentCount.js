@@ -9,6 +9,7 @@ const LikeNdCommentCount = ({ count, icon }) => {
                 className={style.icons}
                 src={require(`../../assets/icons/${icon}`)}
                 alt=""
+                loading="lazy"
             />
             <span className={style.count}>{count}</span>
         </div>

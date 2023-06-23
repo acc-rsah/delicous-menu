@@ -80,11 +80,7 @@ const Communtiy = () => {
 
     return (
         <section className={`${style.container} menu_section`} id="community">
-            <div
-                className={`${style.imgNdTxtContainer} ${
-                    style.row_Container_1
-                } section ${isVisible[0] ? `${style.section_vis}` : ""}`}
-            >
+            <div className={`${style.row_Container_1}`}>
                 <div className={style.title_container}>
                     <div>
                         <h2 className={style.titleText}>Meet Our</h2>
@@ -99,7 +95,9 @@ const Communtiy = () => {
                     </div>
                 </div>
                 <div
-                    className={`${style.cardContainer} ${style.cardContainer_1}`}
+                    className={`${style.cardContainer} ${
+                        style.cardContainer_1
+                    } section ${isVisible[0] ? `${style.section_vis}` : ""}`}
                 >
                     <img
                         alt="details"

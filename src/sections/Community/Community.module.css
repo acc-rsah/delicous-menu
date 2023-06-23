@@ -35,10 +35,21 @@
     /* grid-template-columns: repeat(4, 1fr); */
     grid-gap: 25px;
     opacity: 0;
+    transform: translateY(100%);
     transition: opacity 0.8s;
+    transition: transform 0.8s;
+}
+
+.cardContainer_1 {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.8s;
+    transition: transform 0.8s;
 }
 
 .row_Container_1 {
+    display: grid;
+    grid-gap: 25px;
     grid-template-columns: 1fr 1fr auto;
 }
 .row_Container_2 {
@@ -63,6 +74,7 @@
 
 .section_vis {
     opacity: 1;
+    transform: unset;
     transition-delay: 0.2s;
 }
 
