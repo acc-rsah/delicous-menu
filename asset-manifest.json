@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/menu/static/css/main.8eef469c.css",
-    "main.js": "/menu/static/js/main.686cc7f4.js",
+    "main.css": "/menu/static/css/main.0784fc05.css",
+    "main.js": "/menu/static/js/main.0ea0276b.js",
     "static/media/GillSans.ttc": "/menu/static/media/GillSans.aa3fed75f21a45d4e9be.ttc",
     "static/media/pineapple.png": "/menu/static/media/pineapple.e469700eb31775d994d8.png",
     "static/media/FETAANDPEACH.png": "/menu/static/media/FETAANDPEACH.12d41ed5ec17af3d30f4.png",
@@ -15,11 +15,11 @@
     "static/media/DIN Condensed Bold.ttf": "/menu/static/media/DIN Condensed Bold.c6129d64622a5ae77932.ttf",
     "static/media/detail03.png": "/menu/static/media/detail03.18369c2a277638a9acbd.png",
     "index.html": "/menu/index.html",
-    "main.8eef469c.css.map": "/menu/static/css/main.8eef469c.css.map",
-    "main.686cc7f4.js.map": "/menu/static/js/main.686cc7f4.js.map"
+    "main.0784fc05.css.map": "/menu/static/css/main.0784fc05.css.map",
+    "main.0ea0276b.js.map": "/menu/static/js/main.0ea0276b.js.map"
   },
   "entrypoints": [
-    "static/css/main.8eef469c.css",
-    "static/js/main.686cc7f4.js"
+    "static/css/main.0784fc05.css",
+    "static/js/main.0ea0276b.js"
   ]
 }
