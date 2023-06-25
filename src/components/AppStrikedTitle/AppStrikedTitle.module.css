@@ -1,27 +1,37 @@
 .container {
     width: fit-content;
 }
+
 .titleText {
     font-size: 62px;
     color: var(--charcoal_black);
-    font-weight: var(--font_weight_bold);
     text-transform: uppercase;
     line-height: 1;
     position: relative;
     z-index: 1;
+    height: 56px;
 }
 
 .titleText::before {
     content: "";
     height: 6px;
-    /* width: 105%; */
+    width: 120%;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: calc(50% + 3px);
+    transform: translate(-50%, -50%);
+}
+/* .titleText::before {
+    content: "";
+    height: 6px;
     width: 120%;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 40%);
     bottom: 50%;
     z-index: -1;
-}
+} */
 
 .variant_1::before {
     background-color: #ffdac9;
