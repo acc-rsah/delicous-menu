@@ -23,4 +23,12 @@
     display: flex;
     flex-wrap: nowrap;
     column-gap: 25px;
+
+    /* display: flex;
+    flex-wrap: nowrap;
+    column-gap: 25px;
+    width: 1075px;
+    overflow-x: scroll;
+    margin: 0 0 0 auto;
+    padding-top: 65px; */
 }

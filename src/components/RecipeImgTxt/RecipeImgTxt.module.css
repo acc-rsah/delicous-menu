@@ -1,6 +1,6 @@
 .container {
     width: 240px;
-    background-color: #fff;
+    /* background-color: transparent; */
     display: flex;
     flex-direction: column;
 }

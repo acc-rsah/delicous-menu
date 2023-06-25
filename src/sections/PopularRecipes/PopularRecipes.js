@@ -117,7 +117,7 @@ const PopularRecipes = () => {
             className={`${style.container} menu_section`}
             id="popular_recipes"
         >
-            <div className={style.headerTitles}>
+            <div className={style.headerTitles} id="dish_title">
                 <div>
                     <h2 className={style.title}>Popular</h2>
                     <AppStrikedTitle text="Recipes" variant="variant_1" />
