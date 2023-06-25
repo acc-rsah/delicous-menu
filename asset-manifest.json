@@ -1,17 +1,25 @@
 {
   "files": {
-    "main.css": "/menu/static/css/main.ab9de194.css",
-    "main.js": "/menu/static/js/main.8cbbaa2f.js",
+    "main.css": "/menu/static/css/main.b1eab04e.css",
+    "main.js": "/menu/static/js/main.686cc7f4.js",
+    "static/media/GillSans.ttc": "/menu/static/media/GillSans.aa3fed75f21a45d4e9be.ttc",
+    "static/media/pineapple.png": "/menu/static/media/pineapple.e469700eb31775d994d8.png",
+    "static/media/FETAANDPEACH.png": "/menu/static/media/FETAANDPEACH.12d41ed5ec17af3d30f4.png",
     "static/media/landing_page.png": "/menu/static/media/landing_page.b3547782c9382bccc06b.png",
+    "static/media/CheeseSpinach.png": "/menu/static/media/CheeseSpinach.3cf0241751db5712ca1a.png",
     "static/media/taco.png": "/menu/static/media/taco.7b2421d2f8b5ba21adef.png",
     "static/media/burger.png": "/menu/static/media/burger.07cd33ddc0c4dfadff28.png",
+    "static/media/landingPage.png": "/menu/static/media/landingPage.280950d05fb937b60b41.png",
+    "static/media/sandwich.png": "/menu/static/media/sandwich.6e938cc3ac6bc5451430.png",
     "static/media/desert.png": "/menu/static/media/desert.1db6ead4d7d94bfe60c2.png",
+    "static/media/DIN Condensed Bold.ttf": "/menu/static/media/DIN Condensed Bold.c6129d64622a5ae77932.ttf",
+    "static/media/detail03.png": "/menu/static/media/detail03.18369c2a277638a9acbd.png",
     "index.html": "/menu/index.html",
-    "main.ab9de194.css.map": "/menu/static/css/main.ab9de194.css.map",
-    "main.8cbbaa2f.js.map": "/menu/static/js/main.8cbbaa2f.js.map"
+    "main.b1eab04e.css.map": "/menu/static/css/main.b1eab04e.css.map",
+    "main.686cc7f4.js.map": "/menu/static/js/main.686cc7f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab9de194.css",
-    "static/js/main.8cbbaa2f.js"
+    "static/css/main.b1eab04e.css",
+    "static/js/main.686cc7f4.js"
   ]
 }
