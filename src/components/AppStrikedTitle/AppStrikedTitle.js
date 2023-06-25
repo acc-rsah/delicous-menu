@@ -8,7 +8,9 @@ const AppStrikedTitle = ({ text, variant }) => {
         <div className={style.container}>
             <h2
                 className={`${
-                    userAgent.match(/Win/i) ? style.titleText : style.titleText
+                    userAgent.match(/Win/i)
+                        ? style.titleText
+                        : style.titleTextMac
                 } ${style[variant]}`}
             >
                 {text}
