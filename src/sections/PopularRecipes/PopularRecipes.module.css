@@ -20,17 +20,35 @@
 }
 
 .dish_section {
-    margin-top: 65px;
-    padding-left: 80px;
+    padding-right: 40px;
     display: flex;
     flex-wrap: nowrap;
     column-gap: 25px;
+    position: relative;
+    overflow-x: hidden;
+    padding-top: 65px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 
-    /* display: flex;
-    flex-wrap: nowrap;
-    column-gap: 25px;
+.prevNextBtn {
+    display: flex;
     width: 1075px;
-    overflow-x: scroll;
-    margin: 0 0 0 auto;
-    padding-top: 65px; */
+    justify-content: flex-end;
+    margin: 0 auto;
+    margin-top: 38px;
+    gap: 15px;
+}
+
+.prevNextBtn img {
+    cursor: pointer;
+}
+
+.imgPrevBtn.active {
+    transform: rotate(180deg);
+}
+
+.imgNextBtn.inactive {
+    transform: rotate(180deg);
 }
