@@ -1,19 +1,5 @@
 .container {
     width: fit-content;
-    height: 56px;
-    position: relative;
-    z-index: 1;
-}
-
-.container::before {
-    content: "";
-    height: 6px;
-    width: 120%;
-    position: absolute;
-    z-index: -1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .titleText {
@@ -25,16 +11,16 @@
     z-index: 1;
 }
 
-/* .titleText::before {
+.titleText::before {
     content: "";
     height: 6px;
     width: 120%;
     position: absolute;
     z-index: -1;
     left: 50%;
-    top: calc(50% + 3px);
+    top: 50%;
     transform: translate(-50%, -50%);
-} */
+}
 /* .titleText::before {
     content: "";
     height: 6px;
