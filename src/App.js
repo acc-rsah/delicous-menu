@@ -44,7 +44,7 @@ function App() {
             <Communtiy />
             <Map />
             <Menu data={data} />
-            {/*  <PopularRecipes /> */}
+            <PopularRecipes />
             <Collaborate />
             <Footer />
         </div>

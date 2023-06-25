@@ -1,13 +1,13 @@
 .container {
     width: 200px;
     position: relative;
-    left: -16px;
+    left: -42px;
+    padding-bottom: 12px;
 }
 
 .titleText {
-    font-size: 40px;
+    font-size: 62px;
     color: var(--charcoal_black);
-    font-weight: var(--font_weight_bold);
     line-height: 0.9;
     text-transform: uppercase;
 }

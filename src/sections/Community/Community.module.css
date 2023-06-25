@@ -4,6 +4,8 @@
     display: grid;
     justify-content: center;
     grid-row-gap: 25px;
+    /* z-index: 10;
+    position: relative; */
 }
 
 .title_container {
