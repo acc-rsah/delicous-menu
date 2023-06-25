@@ -3,7 +3,7 @@
 }
 
 .titleText,
-titleTextMac {
+.titleTextMac {
     font-size: 62px;
     color: var(--charcoal_black);
     text-transform: uppercase;
