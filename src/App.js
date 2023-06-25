@@ -12,11 +12,34 @@ import Footer from "./sections/Footer/Footer";
 import SectionCounter from "./components/SectionCounter/SectionCounter";
 import RequestInfo from "./components/RequestInfo/RequestInfo";
 import landingImg from "./assets/images/landingPage.png";
+import "./index.css";
+import FontFaceObserver from "fontfaceobserver";
+import font1 from "./fonts/DINCondensedBold.ttf";
+import font2 from "./fonts/GillSans.ttc";
 
 function App() {
     const [imageLoaded, setImageLoaded] = useState(false);
+    const [areFontsLoaded, setFontsLoaded] = useState(false);
 
     useEffect(() => {
+        const loadFonts = async () => {
+            const font1Observer = new FontFaceObserver("DIN Condensed");
+            const font2Observer = new FontFaceObserver("Menu GillSans");
+
+            try {
+                await Promise.all([
+                    font1Observer.load(font1, 60000),
+                    font2Observer.load(font2, 60000),
+                ]);
+
+                setFontsLoaded(true);
+            } catch (error) {
+                console.error("Error loading fonts:", error);
+            }
+        };
+
+        loadFonts();
+
         const image = new Image();
         image.src = landingImg;
         image.onload = () => {
@@ -27,7 +50,7 @@ function App() {
     const { loading, data, error } = useFetch(
         "https://3gyhzkmhda.eu-west-1.awsapprunner.com/foods"
     );
-    if (loading || !imageLoaded) {
+    if (loading || !imageLoaded || !areFontsLoaded) {
         return <SkeletonLoader />;
     }
 
