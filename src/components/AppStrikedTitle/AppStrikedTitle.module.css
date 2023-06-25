@@ -2,7 +2,8 @@
     width: fit-content;
 }
 
-.titleText {
+.titleText,
+titleTextMac {
     font-size: 62px;
     color: var(--charcoal_black);
     text-transform: uppercase;
@@ -11,7 +12,8 @@
     z-index: 1;
 }
 
-.titleText::before {
+.titleText::before,
+.titleTextMac::before {
     content: "";
     height: 6px;
     width: 120%;
@@ -21,16 +23,11 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
 .titleTextMac::before {
-    content: "";
-    height: 6px;
-    width: 120%;
-    position: absolute;
-    z-index: -1;
-    left: 50%;
     top: calc(50% - 9px);
-    transform: translate(-50%, -50%);
 }
+
 /* .titleText::before {
     content: "";
     height: 6px;
