@@ -3,6 +3,7 @@ import style from "./SectionCounter.module.css";
 
 const SectionCounter = () => {
     const [counter, setCounter] = useState(1);
+    var userAgent = navigator.userAgent;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -40,7 +41,15 @@ const SectionCounter = () => {
                     /* style={{ width: counter === index + 1 ? "30px" : "15px" }} */
                 >
                     {counter === index + 1 && (
-                        <span className={style.counter_value}>{counter}</span>
+                        <span
+                            className={`${
+                                userAgent.match(/Win/i)
+                                    ? style.counter_value
+                                    : style.counter_valueMac
+                            }`}
+                        >
+                            {counter}
+                        </span>
                     )}
                 </div>
             ))}

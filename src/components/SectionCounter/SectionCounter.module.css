@@ -39,11 +39,16 @@
     /* background-color: #ff7f50;
 } */
 
-.counter_value {
+.counter_value,
+.counter_valueMac {
     position: absolute;
     top: 50%;
     left: 4px;
     transform: translateY(-50%);
     font-size: 18px;
     color: var(--charcoal_black);
+}
+
+.counter_valueMac {
+    top: 3px;
 }
