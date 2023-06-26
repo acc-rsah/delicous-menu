@@ -116,7 +116,7 @@ const PopularRecipes = () => {
                     "Amp up this dinner party classic by stuffing three types of cheese, spinach and mushroom into the chicken and flavoured along side with chicken soup",
             },
         },
-        {
+        /* {
             picName: "FETAANDPEACH",
             picPath: "FETAANDPEACH.png",
             serving: "8",
@@ -160,7 +160,7 @@ const PopularRecipes = () => {
                 dishDesc:
                     "Amp up this dinner party classic by stuffing three types of cheese, spinach and mushroom into the chicken and flavoured along side with chicken soup",
             },
-        },
+        }, */
     ];
 
     const scrollToPrevious = () => {
