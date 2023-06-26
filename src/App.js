@@ -13,16 +13,16 @@ import SectionCounter from "./components/SectionCounter/SectionCounter";
 import RequestInfo from "./components/RequestInfo/RequestInfo";
 import landingImg from "./assets/images/landingPage.png";
 import "./index.css";
-import FontFaceObserver from "fontfaceobserver";
+/* import FontFaceObserver from "fontfaceobserver";
 import font1 from "./fonts/DINCondensedBold.ttf";
-import font2 from "./fonts/GillSans.ttc";
+import font2 from "./fonts/GillSans.ttc"; */
 
 function App() {
     const [imageLoaded, setImageLoaded] = useState(false);
-    const [areFontsLoaded, setFontsLoaded] = useState(false);
+    /* const [areFontsLoaded, setFontsLoaded] = useState(false); */
 
     useEffect(() => {
-        const loadFonts = async () => {
+        /* const loadFonts = async () => {
             const font1Observer = new FontFaceObserver("DIN Condensed");
             const font2Observer = new FontFaceObserver("Menu GillSans");
 
@@ -38,7 +38,7 @@ function App() {
             }
         };
 
-        loadFonts();
+        loadFonts(); */
 
         const image = new Image();
         image.src = landingImg;
@@ -50,7 +50,7 @@ function App() {
     const { loading, data, error } = useFetch(
         "https://3gyhzkmhda.eu-west-1.awsapprunner.com/foods"
     );
-    if (loading || !imageLoaded || !areFontsLoaded) {
+    if (loading || !imageLoaded) {
         return <SkeletonLoader />;
     }
 
